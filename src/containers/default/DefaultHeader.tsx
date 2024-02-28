@@ -3,7 +3,7 @@ import {Link, useLocation} from 'react-router-dom';
 
 const {Header} = Layout;
 
-const items1 = ['Home', 'Add'].map((key) => ({
+const items1 = ['Home'].map((key) => ({
     key,
     label: `${key}`,
     link: key.toLowerCase(), // Add a link property based on the item key
@@ -28,7 +28,7 @@ const DefaultHeader = () => {
             >
                 {items1.map((item) => (
                     <Menu.Item key={item.link}>
-                        <Link to={`/${item.link}`}>{item.label}</Link>
+                        <Link to="/">{item.label}</Link>
                     </Menu.Item>
                 ))}
             </Menu>
