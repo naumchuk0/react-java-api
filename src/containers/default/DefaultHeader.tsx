@@ -34,6 +34,11 @@ const DefaultHeader = () => {
             </Menu>
 
             <>
+                <Link to={"/goods/list"}>
+                    <Button style={ButtonStyle}>
+                        Goods
+                    </Button>
+                </Link>
                 <Link to={"/login"}>
                     <Button style={ButtonStyle}>
                         Sign-In

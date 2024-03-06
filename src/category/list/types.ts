@@ -6,6 +6,7 @@ export interface ICategoryItem {
 }
 
 export interface IGetCategories {
+    slice: any;
     content: ICategoryItem[],
     totalElements: number
 }
